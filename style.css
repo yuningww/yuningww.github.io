@@ -137,6 +137,23 @@ a { color: inherit; text-decoration: none; }
   font-size: 1.05rem;
 }
 
+/* notes landing: multi-paragraph intro that fills the column */
+.hero-intro { margin-top: 22px; }
+.hero-intro p {
+  max-width: none;
+  margin-top: 0;
+  color: var(--paper-dim);
+  font-size: 1.05rem;
+}
+.notes-intro { padding: 8px 0 56px; border-bottom: 1px solid var(--line); }
+.notes-intro .hero-intro { margin-top: 0; }
+.hero-intro p + p { margin-top: 14px; }
+.hero-intro a {
+  color: var(--signal);
+  overflow-wrap: anywhere;
+}
+.hero-intro a:hover { text-decoration: underline; }
+
 .hero-links {
   margin-top: 30px;
   display: flex;
